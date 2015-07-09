@@ -1,0 +1,22 @@
+{{link-to "index" "meetups"}}
+
+<div id="{{model.id}}">
+  <img alt="{{model.name}}" src="{{model.imageURL}}" data-speaker-id={{model.id}} >
+  <br/>
+  <a href="{{model.url}}">{{model.url}}</a>
+</div>
+
+<div>
+  {{#if editing}}
+    {{input value=editorName}}
+    {{textarea rows=3 value=editorBio}}
+    <button {{action "save"}}>Save</button>
+    <button {{action "cancel"}}>Cancel</button>
+  {{else}}
+    <div {{ action "edit" }}>
+      <h3>{{model.name}}</h3>
+      <p>Fundado: {{model.date}}</p>
+    </div>
+  {{/if}}
+  <h4><span>Miembros:</span> {{model.members}}</h4>
+</div>

@@ -1,0 +1,10 @@
+<h2 id="title">Meetups</h2>
+
+<div>
+  {{#each model as |meetup|}}
+    {{#link-to "meetup" meetup}}
+      <p>{{meetup.name}}</p>
+      <p>{{meetup.session}}</p>
+    {{/link-to}}
+  {{/each}}
+</div>

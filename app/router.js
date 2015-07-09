@@ -6,6 +6,8 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('meetups');
+  this.route('meetup', { path: '/meetups/:id' });
 });
 
 export default Router;
