@@ -40,7 +40,7 @@ export var meetupList = [
     "members": 103,
   },
   {
-    "id": "houston",
+    "id": "budapest",
     "name": "Budapest, Hungría",
     "imageURL": "images/logos/budapest.jpeg",
     "date": "2013-07-15",

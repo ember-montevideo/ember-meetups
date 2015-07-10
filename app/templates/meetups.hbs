@@ -1,10 +1,15 @@
 <h2 id="title">Meetups</h2>
 
-<div>
+<div style="float:left;">
   {{#each model as |meetup|}}
-    {{#link-to "meetup" meetup}}
+    {{#link-to "meetups.meetup" meetup.id}}
       <p>{{meetup.name}}</p>
       <p>{{meetup.session}}</p>
     {{/link-to}}
   {{/each}}
 </div>
+
+<div style="margin-left:300px;float:left;">
+  {{liquid-outlet}}
+</div>
+
